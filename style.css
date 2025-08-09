@@ -1074,3 +1074,201 @@ footer {
     padding: 0.8rem 1.5rem;
     margin-top: 0.5rem;
 }
+
+/* Ajout des media queries à la fin du fichier */
+
+@media (max-width: 1200px) {
+    .hero h2 {
+        font-size: 5rem;
+    }
+
+    .vision-section {
+        grid-template-columns: 1fr;
+        gap: 4rem;
+        padding: 8rem 8%;
+    }
+
+    .domains-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr 1fr;
+        gap: 3rem;
+    }
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 1rem 5%;
+    }
+
+    nav h1 {
+        font-size: 2rem;
+    }
+
+    .nav-btn {
+        padding: 1rem 1.5rem;
+        font-size: 0.9rem;
+    }
+
+    .hero {
+        padding: 8rem 5% 6rem;
+    }
+
+    .hero h2 {
+        font-size: 3rem;
+    }
+
+    .hero p {
+        font-size: 1.3rem;
+    }
+
+    .vision-section {
+        padding: 4rem 5%;
+    }
+
+    .vision-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .vision-text {
+        font-size: 1.2rem;
+    }
+
+    .domains-section {
+        padding: 4rem 5%;
+    }
+
+    .domains-section h2 {
+        font-size: 2.5rem;
+    }
+
+    .domain-header h3 {
+        font-size: 1.5rem;
+    }
+
+    .reviews-hero .hero-content {
+        flex-direction: column;
+    }
+
+    .tag-filters {
+        min-width: 100%;
+    }
+
+    .featured-article {
+        margin: 2rem 1rem;
+        padding: 2rem;
+    }
+
+    .article-title {
+        font-size: 2rem;
+    }
+
+    .article-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    .reviews-grid {
+        grid-template-columns: 1fr;
+        padding: 0 5%;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .social-links {
+        justify-content: center;
+    }
+
+    .full-article {
+        margin: 80px auto 40px;
+        padding: 0 1rem;
+    }
+
+    .article-header-large h1 {
+        font-size: 2.5rem;
+    }
+
+    .book-page {
+        padding: 2rem 1rem;
+        margin: 80px 1rem;
+    }
+
+    .page-navigation {
+        width: 100%;
+        border-radius: 0;
+        bottom: 0;
+        padding: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .page-btn {
+        padding: 0.8rem 1.2rem;
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h2 {
+        font-size: 2.5rem;
+    }
+
+    .featured-badge {
+        position: static;
+        margin-bottom: 1rem;
+        display: inline-flex;
+    }
+
+    .tag-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .article-content-large {
+        font-size: 1.1rem;
+    }
+
+    .article-quote {
+        font-size: 1.5rem;
+    }
+
+    .article-emphasis {
+        padding: 1.5rem;
+        font-size: 1.1rem;
+    }
+
+    .contact-hero {
+        padding: 8rem 5% 4rem;
+    }
+
+    .contact-content {
+        font-size: 1.1rem;
+    }
+
+    .contact-btn {
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+/* Ajustements pour l'accessibilité tactile */
+@media (hover: none) {
+    .nav-btn:hover::before {
+        opacity: 0;
+    }
+
+    .article-read-btn:hover {
+        transform: none;
+    }
+
+    .review-card:hover {
+        transform: none;
+    }
+
+    .domain-item:hover {
+        transform: none;
+    }
+}
