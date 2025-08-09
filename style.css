@@ -1075,30 +1075,287 @@ footer {
     margin-top: 0.5rem;
 }
 
-/* Ajout des media queries à la fin du fichier */
+/* Ajout des media queries après les styles existants *//* Ajout des media queries après les styles existants */
 
-@media (max-width: 1200px) {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}    }        position: sticky;    .page-navigation {    }        padding: 4rem 5%;    .domains-section {    .vision-section,    }        padding: 8rem 5% 4rem;    .hero {@media screen and (max-height: 600px) and (orientation: landscape) {/* Gestion du mode paysage sur mobile */}    }        font-size: 16px !important;    input[type="search"] {    input[type="email"],    input[type="text"],@media screen and (max-width: 768px) {/* Correction des problèmes de zoom sur les formulaires sur iOS */}    }        padding: 1.5rem;    .review-card {    }        padding: 0 1rem;    .reviews-grid {    }        grid-template-columns: 1fr;    .tag-grid {    }        gap: 0.5rem;        flex-direction: column;    .article-meta {    }        display: inline-flex;        margin-bottom: 1rem;        position: static;    .featured-badge {    }        margin: 1rem;        padding: 2rem 1.5rem;    .featured-article {    }        padding: 2rem;    .newsletter-details {    }        padding: 4rem 5%;    .domains-section {    .vision-section,    }        font-size: 1.1rem;    .hero p {    }        font-size: 2.5rem;    .hero h2 {    }        font-size: 13px;    html {@media screen and (max-width: 480px) {/* Mobiles */}    }        font-size: 0.9rem;        padding: 0.8rem 1.2rem;    .page-btn {    }        padding: 0.8rem;        bottom: 0;        border-radius: 0;        width: 100%;    .page-navigation {    }        margin: 80px 1rem 120px;        padding: 2rem 1rem;    .book-page {    }        justify-content: center;    .social-links {    }        text-align: center;        gap: 3rem;        grid-template-columns: 1fr;    .footer-content {    }        font-size: 1.8rem;    .domain-header h3 {    }        font-size: 1.2rem;    .vision-text {    }        font-size: 2.5rem;    .domains-section h2 {    .vision-section h2,    }        font-size: 1.3rem;    .hero p {    }        font-size: 3rem;    .hero h2 {    }        font-size: 0.9rem;        padding: 0.8rem 1.5rem;    .nav-btn {    }        font-size: 2rem;    nav h1 {    }        padding: 1rem 5%;    nav {    }        font-size: 14px;    html {@media screen and (max-width: 768px) {/* Tablettes et petits écrans */}    }        font-size: 2.5rem;    .article-title {    }        margin: 2rem 1rem;    .featured-article {    }        min-width: auto;        width: 100%;    .tag-filters {    }        flex-direction: column;    .reviews-hero .hero-content {    }        grid-template-columns: 1fr;    .domains-grid {    }        padding: 6rem 5%;        gap: 4rem;        grid-template-columns: 1fr;    .vision-section {    }        font-size: 4rem;    .hero h2 {    }        padding: 12rem 5% 8rem;    .hero {    }        font-size: 15px;    html {@media screen and (max-width: 1200px) {/* Écrans moyens et tablettes */}    }        padding: 8rem 5%;    .domains-section {        }        padding: 8rem 5%;    .vision-section {        }        font-size: 5rem;    .hero h2 {@media screen and (min-width: 1921px) {/* Grands écrans */}    -webkit-text-size-adjust: 100%;    font-size: 16px;html {/* Correction du zoom et responsive design *//* Correction du zoom et responsive design */
+html {
+    font-size: 16px;
+    -webkit-text-size-adjust: 100%;
+}
+
+/* Grands écrans */
+@media screen and (min-width: 1921px) {
     .hero h2 {
         font-size: 5rem;
+    }
+    
+    .vision-section {
+        padding: 8rem 5%;
+    }
+    
+    .domains-section {
+        padding: 8rem 5%;
+    }
+}
+
+/* Écrans moyens et tablettes */
+@media screen and (max-width: 1200px) {
+    html {
+        font-size: 15px;
+    }
+
+    .hero {
+        padding: 12rem 5% 8rem;
+    }
+
+    .hero h2 {
+        font-size: 4rem;
     }
 
     .vision-section {
         grid-template-columns: 1fr;
         gap: 4rem;
-        padding: 8rem 8%;
+        padding: 6rem 5%;
     }
 
     .domains-grid {
         grid-template-columns: 1fr;
     }
 
-    .footer-content {
-        grid-template-columns: 1fr 1fr;
-        gap: 3rem;
+    .reviews-hero .hero-content {
+        flex-direction: column;
+    }
+
+    .tag-filters {
+        width: 100%;
+        min-width: auto;
+    }
+
+    .featured-article {
+        margin: 2rem 1rem;
+    }
+
+    .article-title {
+        font-size: 2.5rem;
     }
 }
 
-@media (max-width: 768px) {
+/* Tablettes et petits écrans */
+@media screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+
     nav {
         padding: 1rem 5%;
     }
@@ -1108,12 +1365,8 @@ footer {
     }
 
     .nav-btn {
-        padding: 1rem 1.5rem;
+        padding: 0.8rem 1.5rem;
         font-size: 0.9rem;
-    }
-
-    .hero {
-        padding: 8rem 5% 6rem;
     }
 
     .hero h2 {
@@ -1124,11 +1377,8 @@ footer {
         font-size: 1.3rem;
     }
 
-    .vision-section {
-        padding: 4rem 5%;
-    }
-
-    .vision-section h2 {
+    .vision-section h2,
+    .domains-section h2 {
         font-size: 2.5rem;
     }
 
@@ -1136,47 +1386,13 @@ footer {
         font-size: 1.2rem;
     }
 
-    .domains-section {
-        padding: 4rem 5%;
-    }
-
-    .domains-section h2 {
-        font-size: 2.5rem;
-    }
-
     .domain-header h3 {
-        font-size: 1.5rem;
-    }
-
-    .reviews-hero .hero-content {
-        flex-direction: column;
-    }
-
-    .tag-filters {
-        min-width: 100%;
-    }
-
-    .featured-article {
-        margin: 2rem 1rem;
-        padding: 2rem;
-    }
-
-    .article-title {
-        font-size: 2rem;
-    }
-
-    .article-meta {
-        flex-direction: column;
-        gap: 0.5rem;
-    }
-
-    .reviews-grid {
-        grid-template-columns: 1fr;
-        padding: 0 5%;
+        font-size: 1.8rem;
     }
 
     .footer-content {
         grid-template-columns: 1fr;
+        gap: 3rem;
         text-align: center;
     }
 
@@ -1184,26 +1400,16 @@ footer {
         justify-content: center;
     }
 
-    .full-article {
-        margin: 80px auto 40px;
-        padding: 0 1rem;
-    }
-
-    .article-header-large h1 {
-        font-size: 2.5rem;
-    }
-
     .book-page {
         padding: 2rem 1rem;
-        margin: 80px 1rem;
+        margin: 80px 1rem 120px;
     }
 
     .page-navigation {
         width: 100%;
         border-radius: 0;
         bottom: 0;
-        padding: 0.5rem;
-        justify-content: space-between;
+        padding: 0.8rem;
     }
 
     .page-btn {
@@ -1212,9 +1418,32 @@ footer {
     }
 }
 
-@media (max-width: 480px) {
+/* Mobiles */
+@media screen and (max-width: 480px) {
+    html {
+        font-size: 13px;
+    }
+
     .hero h2 {
         font-size: 2.5rem;
+    }
+
+    .hero p {
+        font-size: 1.1rem;
+    }
+
+    .vision-section,
+    .domains-section {
+        padding: 4rem 5%;
+    }
+
+    .newsletter-details {
+        padding: 2rem;
+    }
+
+    .featured-article {
+        padding: 2rem 1.5rem;
+        margin: 1rem;
     }
 
     .featured-badge {
@@ -1223,52 +1452,45 @@ footer {
         display: inline-flex;
     }
 
+    .article-meta {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
     .tag-grid {
         grid-template-columns: 1fr;
     }
 
-    .article-content-large {
-        font-size: 1.1rem;
+    .reviews-grid {
+        padding: 0 1rem;
     }
 
-    .article-quote {
-        font-size: 1.5rem;
-    }
-
-    .article-emphasis {
+    .review-card {
         padding: 1.5rem;
-        font-size: 1.1rem;
-    }
-
-    .contact-hero {
-        padding: 8rem 5% 4rem;
-    }
-
-    .contact-content {
-        font-size: 1.1rem;
-    }
-
-    .contact-btn {
-        width: 100%;
-        justify-content: center;
     }
 }
 
-/* Ajustements pour l'accessibilité tactile */
-@media (hover: none) {
-    .nav-btn:hover::before {
-        opacity: 0;
+/* Correction des problèmes de zoom sur les formulaires sur iOS */
+@media screen and (max-width: 768px) {
+    input[type="text"],
+    input[type="email"],
+    input[type="search"] {
+        font-size: 16px !important;
+    }
+}
+
+/* Gestion du mode paysage sur mobile */
+@media screen and (max-height: 600px) and (orientation: landscape) {
+    .hero {
+        padding: 8rem 5% 4rem;
     }
 
-    .article-read-btn:hover {
-        transform: none;
+    .vision-section,
+    .domains-section {
+        padding: 4rem 5%;
     }
 
-    .review-card:hover {
-        transform: none;
-    }
-
-    .domain-item:hover {
-        transform: none;
+    .page-navigation {
+        position: sticky;
     }
 }
