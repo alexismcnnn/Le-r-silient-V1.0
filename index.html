@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Le Résilient</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Le Résilient</h1>
+            <a href="about.html" class="nav-btn">
+                <span>Nos revues</span>
+                <i class="fas fa-arrow-right"></i>
+            </a>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <h2><i class="fas fa-brain"></i> Penser, comprendre, questionner.</h2>
+        <p>Un espace où la réflexion profonde s’exerce loin des slogans, entre philosophie, psychologie sociale et regard lucide sur le monde.</p>
+    </section>
+
+    <section class="vision-section">
+        <div class="vision-content">
+            <h2>Notre ambition</h2>
+            <div class="vision-text">
+                <p><strong>Le Résilient</strong> n'est pas un journal de « développement personnel » ou de conseils faciles. C'est un lieu de pensée exigeante, qui invite à comprendre les forces invisibles qui façonnent nos sociétés et nos psychés.</p>
+                <p>Nous privilégions l'analyse rigoureuse, la nuance et l'ouverture, pour permettre à chacun de se forger un regard critique, fondé sur des savoirs solides et une prise en compte honnête des réalités sociales et humaines.</p>
+                <p>Notre objectif : stimuler la curiosité intellectuelle, confronter les idées sans dogmatisme, et donner aux lecteurs les clefs pour comprendre le monde d'aujourd'hui — avec ses complexités, ses contradictions, ses défis.</p>
+                <!-- Ajout du lien vers l'article fondateur -->
+                <a href="article-fondateur.html" class="article-read-btn">
+                    Découvrir notre texte fondateur <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
+        <div class="newsletter-details">
+            <h3>Newsletter mensuelle</h3>
+            <div class="newsletter-item">
+                <i class="far fa-calendar-alt"></i>
+                <p>Un rendez-vous chaque 1er du mois, pour prendre le temps de penser.</p>
+            </div>
+            <div class="newsletter-item">
+                <i class="fas fa-book-reader"></i>
+                <p>Analyses sociales, philosophie appliquée, psychologie critique.</p>
+            </div>
+            <div class="newsletter-item">
+                <i class="far fa-clock"></i>
+                <p>Lecture stimulante de 20 à 30 minutes — pas plus, pas moins.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="domains-section">
+        <h2>Nos axes de réflexion</h2>
+        <div class="domains-grid">
+
+            <div class="domain-item">
+                <div class="domain-header">
+                    <i class="fas fa-brain"></i>
+                    <h3>Psychologie & résilience</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="domain-content">
+                    <p>Comprendre les dynamiques profondes de l’esprit humain, au-delà des recettes faciles. La résilience n’est pas un slogan : c’est un processus complexe, parfois douloureux, souvent invisible.</p>
+                </div>
+            </div>
+
+            <div class="domain-item">
+                <div class="domain-header">
+                    <i class="fas fa-book-open"></i>
+                    <h3>Philosophie contemporaine</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="domain-content">
+                    <p>Interroger la condition humaine, la liberté et la responsabilité, dans un monde en mutation où les certitudes vacillent et les idéaux se recomposent.</p>
+                </div>
+            </div>
+
+            <div class="domain-item">
+                <div class="domain-header">
+                    <i class="fas fa-tree"></i>
+                    <h3>Identité & enracinement</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="domain-content">
+                    <p>Explorer comment nos racines — culturelles, sociales, historiques — façonnent notre rapport au monde et à nous-mêmes, sans renier ni essentialiser.</p>
+                </div>
+            </div>
+
+            <div class="domain-item">
+                <div class="domain-header">
+                    <i class="fas fa-users"></i>
+                    <h3>Société & changement</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="domain-content">
+                    <p>Décrypter les grandes transformations sociales, entre espoirs, tensions et contradictions. Penser un vivre-ensemble réaliste, pas un conte de fées.</p>
+                </div>
+            </div>
+
+            <div class="domain-item">
+                <div class="domain-header">
+                    <i class="fas fa-hands-helping"></i>
+                    <h3>Engagement & action</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="domain-content">
+                    <p>De la pensée à l’action, avec des pistes concrètes, pragmatiques, ancrées dans les réalités humaines et sociales — sans illusions naïves.</p>
+                </div>
+            </div>
+
+            <div class="domain-item">
+                <div class="domain-header">
+                    <i class="fas fa-book"></i>
+                    <h3>Culture & transmission</h3>
+                    <i class="fas fa-chevron-down toggle-icon"></i>
+                </div>
+                <div class="domain-content">
+                    <p>Valoriser notre héritage intellectuel et culturel, tout en restant lucide face aux défis du présent et du futur.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <script>
+        document.querySelectorAll('.domain-item').forEach(item => {
+            item.addEventListener('click', () => {
+                const wasActive = item.classList.contains('active');
+
+                // Ferme tous les items
+                document.querySelectorAll('.domain-item').forEach(i => {
+                    i.classList.remove('active');
+                });
+
+                // Ouvre l'item cliqué s'il n'était pas déjà ouvert
+                if (!wasActive) {
+                    item.classList.add('active');
+                }
+            });
+        });
+    </script>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Le Résilient</h2>
+                <p>Une publication mensuelle qui questionne notre époque avec rigueur et lucidité, pour bâtir un avenir conscient et responsable.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">Nos revues</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="#">Archives</a></li>
+                    <li><a href="#">S'abonner</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2024 Le Résilient — Une voix pour le renouveau</p>
+        </div>
+    </footer>
+</body>
+</html>
+

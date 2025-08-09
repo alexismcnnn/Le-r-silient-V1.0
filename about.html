@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Le Résilient - Nos revues</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Le Résilient</h1>
+            <a href="index.html" class="nav-btn">
+                <span>Accueil</span>
+                <i class="fas fa-home"></i>
+            </a>
+        </nav>
+    </header>
+
+    <section class="reviews-hero">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h2>Nos publications</h2>
+                <p>Explorez nos analyses et réflexions mensuelles</p>
+            </div>
+            <div class="tag-filters">
+                <span class="filter-title">Filtrer par thème :</span>
+                <div class="tag-grid">
+                    <button class="tag-filter active" data-tag="all">Tous</button>
+                    <button class="tag-filter" data-tag="Jeunesse">Jeunesse</button>
+                    <button class="tag-filter" data-tag="Société">Société</button>
+                    <button class="tag-filter" data-tag="Psychologie">Psychologie</button>
+                    <button class="tag-filter" data-tag="Philosophie">Philosophie</button>
+                    <button class="tag-filter" data-tag="Politique">Politique</button>
+                    <button class="tag-filter" data-tag="Développement personnel">Développement</button>
+                    <button class="tag-filter" data-tag="Culture">Culture</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <article class="featured-article">
+        <span class="featured-badge"><i class="fas fa-fire"></i> Article à la une</span>
+        <div class="article-header">
+            <h1 class="article-title">L'Éducation nationale : une multinationale en faillite humaine</h1>
+            <div class="article-meta">
+                <span><i class="far fa-calendar-alt"></i> 6 août 2025</span>
+                <span><i class="far fa-clock"></i> 25 minutes de lecture</span>
+                <span><i class="fas fa-tag"></i> Société, Politique, Jeunesse</span>
+            </div>
+        </div>
+        <div class="article-content">
+            <p>Une analyse sans concession du système éducatif français en 2025. De la déshumanisation galopante au décrochage massif, en passant par l'urgence de réformes profondes, cet article propose un regard lucide sur l'institution et des solutions concrètes pour en sortir.</p>
+            <div class="article-highlights">
+                <h3>Points clés de l'analyse :</h3>
+                <ul>
+                    <li>L'effondrement du mythe de l'école républicaine</li>
+                    <li>La crise du corps enseignant</li>
+                    <li>Le système Parcoursup et ses dérives</li>
+                    <li>Des propositions de réformes radicales</li>
+                </ul>
+            </div>
+            <a href="education-nationale-manifeste.html" class="article-read-btn">
+                Lire le manifeste complet <i class="fas fa-arrow-right"></i>
+            </a>
+        </div>
+    </article>
+
+    <section class="reviews-grid">
+        <article class="review-card">
+            <div class="review-date">3 août 2025</div>
+            <span class="featured-badge small"><i class="fas fa-star"></i> Article fondateur</span>
+            <h3>Le Résilient — Texte fondateur</h3>
+            <p>« Le Résilient » n'est pas un journal comme les autres. Découvrez notre vision et notre engagement pour une pensée exigeante et libre.</p>
+            <div class="review-tags">
+                <span>Philosophie</span>
+                <span>Société</span>
+            </div>
+            <a href="article-fondateur.html" class="read-more">Lire <i class="fas fa-arrow-right"></i></a>
+        </article>
+        
+        <article class="review-card">
+            <div class="review-date">8 août 2025</div>
+            <h3>Liberté d'expression : L'Équation de l'Expression Responsable</h3>
+            <p>Une approche pragmatique et mathématique de la liberté d'expression, proposant un modèle concret pour évaluer quand et comment s'exprimer de manière responsable.</p>
+            <div class="review-tags">
+                <span>Société</span>
+                <span>Philosophie</span>
+                <span>Psychologie</span>
+            </div>
+            <a href="liberte-expression.html" class="read-more">Lire <i class="fas fa-arrow-right"></i></a>
+        </article>
+
+        <article class="review-card">
+            <div class="review-date">10 août 2025</div>
+            <h3>Soigner une société qui va mal : la trilogie incontournable</h3>
+            <p>Face aux crises multiples de notre époque, trois piliers essentiels émergent pour rebâtir une société plus saine : l'Humain, la Justice et l'Éducation. Une analyse approfondie et documentée des transformations nécessaires.</p>
+            <div class="review-tags">
+                <span>Société</span>
+                <span>Politique</span>
+                <span>Éducation</span>
+                <span>Justice</span>
+            </div>
+            <a href="societe-trilogie.html" class="read-more">Lire <i class="fas fa-arrow-right"></i></a>
+        </article>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-brand">
+                <h2>Le Résilient</h2>
+                <p>Une publication mensuelle qui explore les défis de notre temps et propose des solutions concrètes pour construire un avenir meilleur.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-links">
+                <h3>Navigation</h3>
+                <ul>
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="about.html">Nos revues</a></li>
+                    <li><a href="#">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-links">
+                <h3>Ressources</h3>
+                <ul>
+                    <li><a href="#">Archives</a></li>
+                    <li><a href="#">S'abonner</a></li>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li><a href="#">Confidentialité</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>© 2024 Le Résilient — Une voix pour le renouveau</p>
+        </div>
+    </footer>
+
+    <script>
+        const tagFilters = document.querySelectorAll('.tag-filter');
+        const articles = document.querySelectorAll('.review-card');
+
+        tagFilters.forEach(filter => {
+            filter.addEventListener('click', () => {
+                // Retire la classe active de tous les filtres
+                tagFilters.forEach(f => f.classList.remove('active'));
+                
+                // Ajoute la classe active au filtre cliqué
+                filter.classList.add('active');
+
+                const selectedTag = filter.dataset.tag;
+                
+                // Filtre les articles
+                articles.forEach(article => {
+                    const tags = Array.from(article.querySelectorAll('.review-tags span'))
+                        .map(tag => tag.textContent);
+                    
+                    if (selectedTag === 'all') {
+                        article.style.display = 'flex';
+                    } else {
+                        article.style.display = tags.includes(selectedTag) ? 'flex' : 'none';
+                    }
+                });
+            });
+        });
+    </script>
+</body>
+</html>
