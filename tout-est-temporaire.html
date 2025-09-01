@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Tout cela est temporaire - Le Résilient</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <h1>Le Résilient</h1>
+            <a href="about.html" class="nav-btn">
+                <span>Nos revues</span>
+                <i class="fas fa-book-open"></i>
+            </a>
+        </nav>
+    </header>
+
+    <div class="book-layout">
+        <!-- Page 0: Introduction -->
+        <div class="book-page active" id="page-0">
+            <div class="article-header-large">
+                <span class="article-date"><i class="far fa-calendar-alt"></i> 10 septembre 2025</span>
+                <h1>Tout cela est temporaire</h1>
+                <div class="article-subtitle">Chronique pour ceux qui en ont assez de courber l'échine</div>
+            </div>
+
+            <div class="article-content-large">
+                <div class="article-intro">
+                    <p>Il y a un piège dans lequel on tombe tous : croire que la tempête va durer toujours.</p>
+                </div>
+
+                <p>Quand on est en plein dedans, chaque souffle paraît un verdict, chaque regard un jugement définitif. On se replie, on s'excuse d'exister, on vit en retenant sa respiration.</p>
+
+                <div class="article-emphasis">
+                    <p>Mais voilà la vérité qu'on oublie : tout ce qui t'arrive est temporaire.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Page 1: La vérité oubliée -->
+        <div class="book-page" id="page-1">
+            <section class="article-section">
+                <div class="article-emphasis">
+                    <p>La honte que tu ressens aujourd'hui, demain elle se dissoudra dans un souvenir flou.</p>
+                    <p>La peur qui te paralyse maintenant, tu finiras par la regarder avec un demi-sourire, en te disant : « c'est fou d'avoir cru que ça me détruirait ».</p>
+                </div>
+
+                <h2>Ton histoire est un livre en cours d'écriture</h2>
+
+                <p>Regarde ton histoire comme un livre que tu écris.</p>
+                
+                <div class="article-quote">
+                    Les chapitres les plus beaux ne sont pas ceux où tout va bien.
+                    Ce sont les pages où tu te bats, où tu refuses de plier, où tu trouves une force que tu ne soupçonnais pas.
+                </div>
+
+                <p>Plus c'est dur, plus ça a de valeur. Pas pour "les autres", mais pour toi, pour ce que ça fera de toi.</p>
+            </section>
+        </div>
+
+        <!-- Page 2: La libération -->
+        <div class="book-page" id="page-2">
+            <section class="article-section">
+                <h2>Briser les chaînes invisibles</h2>
+
+                <div class="article-emphasis">
+                    <p>Ne subis plus.</p>
+                    <p>La honte n'a pas de prison si tu refuses d'y mettre un pied.</p>
+                </div>
+
+                <p>On t'attaquera, on te critiquera, on t'insultera peut-être. Mais ceux qui pointent du doigt aujourd'hui auront, eux aussi, leur tour de passer sous la lumière crue du jugement.</p>
+
+                <div class="article-quote">
+                    La différence ? Toi, tu auras appris à marcher la tête haute.
+                </div>
+            </section>
+        </div>
+
+        <!-- Page 3: Conclusion -->
+        <div class="book-page" id="page-3">
+            <section class="article-section">
+                <h2>Une empreinte éternelle</h2>
+
+                <div class="article-emphasis">
+                    <p>Alors oui, c'est temporaire. Mais ce que tu en feras, ça, c'est pour toujours.</p>
+                </div>
+
+                <p>Et si tu dois écrire ton histoire, fais en sorte que les moments de chute soient aussi beaux que les victoires — parce qu'ils le sont.</p>
+
+                <div class="article-conclusion">
+                    <p>Dans chaque épreuve se cache une opportunité de grandir, de se renforcer, de devenir plus résilient. Ce n'est pas le moment difficile qui te définit, mais la façon dont tu choisis d'y faire face.</p>
+                </div>
+            </section>
+        </div>
+
+        <!-- Navigation -->
+        <div class="page-navigation">
+            <button id="prevPage" class="page-btn">
+                <i class="fas fa-arrow-left"></i>
+                <span>Précédent</span>
+            </button>
+            <div class="page-counter">
+                Page <span id="currentPage">1</span> sur <span id="totalPages">4</span>
+            </div>
+            <button id="nextPage" class="page-btn">
+                <span>Suivant</span>
+                <i class="fas fa-arrow-right"></i>
+            </button>
+        </div>
+    </div>
+
+    <script>
+        // Script de navigation standard
+        const pages = document.querySelectorAll('.book-page');
+        const prevBtn = document.getElementById('prevPage');
+        const nextBtn = document.getElementById('nextPage');
+        const currentPageSpan = document.getElementById('currentPage');
+        const totalPagesSpan = document.getElementById('totalPages');
+        let currentPageIndex = 0;
+
+        function navigateToPage(pageIndex) {
+            pages[currentPageIndex].classList.remove('active');
+            currentPageIndex = pageIndex;
+            pages[currentPageIndex].classList.add('active');
+            updateNavigation();
+        }
+
+        prevBtn.addEventListener('click', () => {
+            if (currentPageIndex > 0) {
+                navigateToPage(currentPageIndex - 1);
+            }
+        });
+
+        nextBtn.addEventListener('click', () => {
+            if (currentPageIndex < pages.length - 1) {
+                navigateToPage(currentPageIndex + 1);
+            }
+        });
+
+        function updateNavigation() {
+            currentPageSpan.textContent = currentPageIndex + 1;
+            prevBtn.disabled = currentPageIndex === 0;
+            nextBtn.disabled = currentPageIndex === pages.length - 1;
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        }
+
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'ArrowLeft') {
+                prevBtn.click();
+            } else if (e.key === 'ArrowRight') {
+                nextBtn.click();
+            }
+        });
+
+        updateNavigation();
+    </script>
+</body>
+</html>
